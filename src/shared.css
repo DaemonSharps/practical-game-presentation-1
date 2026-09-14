@@ -21,6 +21,8 @@ h1 { max-width: 800px; margin: 18px 0; font-size: clamp(3rem, 8vw, 7rem); line-h
 .presentation-card p { max-width: 620px; font-size: 1.15rem; }
 .open-link { display: inline-block; margin-top: 20px; font-weight: 800; }
 .reveal { background: var(--paper); }
+.presentation-page { min-width: 100vw; min-height: 100vh; overflow: hidden; }
+.presentation-page .reveal { width: 100vw; height: 100vh; }
 .reveal .slides { text-align: left; }
 .reveal section { padding: 28px; }
 .reveal h1, .reveal h2, .reveal h3 { font-family: Inter, ui-sans-serif, system-ui, sans-serif; font-weight: 900; letter-spacing: -.06em; text-transform: none; }
