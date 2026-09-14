@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Осенняя карта: операция «Листопад»</title>
+  </head>
+  <body>
+    <div class="reveal autumn-quest">
+      <div class="slides">
+        <section class="autumn-title">
+          <div class="title-art" aria-hidden="true">🍂 ✦ 🦊 ✦ 🍁</div>
+          <span class="sticker sticker--yellow">КВЕСТ · 5 КЛАСС</span>
+          <p class="slide-kicker">СИНТАКСИС · ПОВТОРЯЕМ ИЗУЧЕННОЕ В НАЧАЛЬНОЙ ШКОЛЕ</p>
+          <h1>Операция<br><em>«Листопад»</em></h1>
+          <p class="title-lead">Осенний лес потерял свои знаки и предложения. Помогите Листику, Сове Точке и Ёжику Запятайке вернуть лесу порядок.</p>
+          <button class="quest-next start-quest" data-start>Открыть карту →</button>
+        </section>
+
+        <section class="rules-slide">
+          <span class="sticker sticker--coral">КОМАНДНАЯ ЭКСПЕДИЦИЯ</span>
+          <h2>Как спасти Осенний лес</h2>
+          <div class="character-row">
+            <article class="character-card character-card--fox"><div class="character-face">🦊</div><strong>Листик</strong><span>ищет слова</span></article>
+            <article class="character-card character-card--owl"><div class="character-face">🦉</div><strong>Сова Точка</strong><span>следит за мыслью</span></article>
+            <article class="character-card character-card--hedgehog"><div class="character-face">🦔</div><strong>Запятайка</strong><span>чинит знаки</span></article>
+          </div>
+          <div class="rules-grid">
+            <div><b>01</b><span>Разделитесь на две команды: «Рябинки» и «Каштаны».</span></div>
+            <div><b>02</b><span>Выберите локацию на карте и назначьте отвечающую команду.</span></div>
+            <div><b>03</b><span>За правильный ответ — 2 листочка. После подсказки — 1.</span></div>
+            <div><b>04</b><span>После ответа обязательно объясните, какое правило помогло.</span></div>
+          </div>
+          <p class="quest-hint"><strong>Учителю:</strong> карта и счёт работают локально в браузере. Можно проходить без соревнования — сравнивать не команды, а способы рассуждения.</p>
+          <button class="quest-next" data-open-map>К карте →</button>
+        </section>
+
+        <section class="map-slide">
+          <div class="quest-topline"><div><p class="slide-kicker">ГЛАВНАЯ СЦЕНА · КЛИКАЙТЕ ПО ЛОКАЦИЯМ</p><h2>Карта Осеннего леса</h2></div><div class="quest-points"><span class="quest-score" data-score="0">Рябинки: 0</span><span class="quest-score quest-score--green" data-score="1">Каштаны: 0</span></div></div>
+          <div class="map-layout">
+            <div class="autumn-map" role="group" aria-label="Кликабельная карта Осеннего леса">
+              <svg viewBox="0 0 900 560" role="img" aria-labelledby="map-title map-desc">
+                <title id="map-title">Карта Осеннего леса</title>
+                <desc id="map-desc">Пять кликабельных локаций: поляна, ручей, домик совы, мостик и дуб с сундуком.</desc>
+                <rect width="900" height="560" rx="34" class="map-sky"/>
+                <path d="M0 410 C170 350 300 450 470 390 S750 350 900 415 V560 H0Z" class="map-ground"/>
+                <path d="M50 440 C200 350 310 480 445 430 S650 365 850 450" class="map-path"/>
+                <g class="map-decor" aria-hidden="true">
+                  <circle cx="80" cy="94" r="34" class="sun"/><text x="64" y="103">✦</text>
+                  <path d="M120 368 l-10 -115 26 -98 28 98 -10 115z" class="tree trunk"/><circle cx="124" cy="151" r="66" class="tree-crown"/>
+                  <path d="M815 410 l-7 -150 26 -115 28 115 -10 150z" class="tree trunk"/><circle cx="829" cy="177" r="74" class="tree-crown tree-crown--dark"/>
+                  <path d="M270 495 q40 -24 80 0 M680 500 q40 -24 80 0" class="bush"/>
+                  <text x="57" y="490" class="map-note">шур-шур</text><text x="735" y="96" class="map-note">шёпот листьев</text>
+                  <text x="440" y="90" class="map-title">ОСЕННИЙ ЛЕС</text>
+                </g>
+                <g class="map-location" data-location="1" tabindex="0" role="button" aria-label="Поляна Грамматической основы">
+                  <circle cx="230" cy="260" r="62" class="location-ring"/><circle cx="230" cy="260" r="48" class="location-fill location-fill--gold"/>
+                  <text x="230" y="253" class="location-icon">🌼</text><text x="230" y="290" class="location-label">ПОЛЯНА</text>
+                </g>
+                <g class="map-location" data-location="2" tabindex="0" role="button" aria-label="Ручей Вопросительный">
+                  <circle cx="440" cy="365" r="62" class="location-ring"/><circle cx="440" cy="365" r="48" class="location-fill location-fill--blue"/>
+                  <text x="440" y="358" class="location-icon">💧</text><text x="440" y="395" class="location-label">РУЧЕЙ</text>
+                </g>
+                <g class="map-location" data-location="3" tabindex="0" role="button" aria-label="Домик Совы Точки">
+                  <circle cx="670" cy="235" r="62" class="location-ring"/><circle cx="670" cy="235" r="48" class="location-fill location-fill--coral"/>
+                  <text x="670" y="228" class="location-icon">🏠</text><text x="670" y="265" class="location-label">ДОМИК</text>
+                </g>
+                <g class="map-location" data-location="4" tabindex="0" role="button" aria-label="Мостик Однородных слов">
+                  <circle cx="350" cy="165" r="62" class="location-ring"/><circle cx="350" cy="165" r="48" class="location-fill location-fill--mint"/>
+                  <text x="350" y="158" class="location-icon">🌉</text><text x="350" y="195" class="location-label">МОСТИК</text>
+                </g>
+                <g class="map-location" data-location="5" tabindex="0" role="button" aria-label="Сундук Знаков">
+                  <circle cx="765" cy="380" r="62" class="location-ring"/><circle cx="765" cy="380" r="48" class="location-fill location-fill--violet"/>
+                  <text x="765" y="373" class="location-icon">🎁</text><text x="765" y="410" class="location-label">СУНДУК</text>
+                </g>
+                <g class="map-character" aria-label="Листик"><text x="142" y="344" class="character-icon">🦊</text><text x="135" y="375" class="character-caption">Листик</text></g>
+                <g class="map-character" aria-label="Сова Точка"><text x="575" y="120" class="character-icon">🦉</text><text x="557" y="151" class="character-caption">Точка</text></g>
+                <g class="map-character" aria-label="Ёжик Запятайка"><text x="520" y="470" class="character-icon">🦔</text><text x="485" y="505" class="character-caption">Запятайка</text></g>
+              </svg>
+            </div>
+            <aside class="map-legend"><div class="legend-title">Выберите путь</div><p>Каждая точка — одна миссия. Нажмите на неё или выберите клавишей Tab.</p><div class="legend-progress"><span data-map-progress>0 / 5</span><div><i data-map-bar></i></div></div><p class="legend-small">Открытые места отмечаются листочком 🍁</p></aside>
+          </div>
+        </section>
+
+        <section data-task="1" class="task-slide">
+          <div class="quest-topline"><div><p class="slide-kicker">ЛОКАЦИЯ 01 · ПОЛЯНА</p><h2>Листик ищет грамматическую основу</h2></div><div class="quest-points"><span class="quest-score" data-score="0">Рябинки: 0</span><span class="quest-score quest-score--green" data-score="1">Каштаны: 0</span></div></div>
+          <div class="task-layout"><div class="character-bubble character-bubble--fox">🦊<strong>Листик:</strong><span>Кто главный в предложении? Найдите пару, которая держит всю мысль.</span></div><div class="quest-card" data-quest-card><p><strong>В предложении «Рыжий ветер кружит листья» грамматическая основа — это…</strong></p><div class="quest-answer-grid"><button class="quest-answer" data-correct="false">рыжий ветер</button><button class="quest-answer" data-correct="true">ветер кружит</button><button class="quest-answer" data-correct="false">кружит листья</button><button class="quest-answer" data-correct="false">рыжий кружит</button></div><div class="quest-teams"><button class="quest-team" data-team="0">Ходят «Рябинки»</button><button class="quest-team" data-team="1">Ходят «Каштаны»</button></div><p class="quest-feedback" data-feedback role="status" aria-live="polite"></p><p class="quest-hint" hidden data-hint><strong>Подсказка Листика:</strong> задай вопросы «кто? что делает?». Главные члены — подлежащее и сказуемое.</p><button class="quest-next" hidden data-next>Вернуться к карте →</button></div></div>
+        </section>
+
+        <section data-task="2" class="task-slide">
+          <div class="quest-topline"><div><p class="slide-kicker">ЛОКАЦИЯ 02 · РУЧЕЙ</p><h2>Запятайка ловит вопрос</h2></div><div class="quest-points"><span class="quest-score" data-score="0">Рябинки: 0</span><span class="quest-score quest-score--green" data-score="1">Каштаны: 0</span></div></div>
+          <div class="task-layout"><div class="character-bubble character-bubble--hedgehog">🦔<strong>Запятайка:</strong><span>Ручей задаёт вопрос. Какой знак поставим в конце?</span></div><div class="quest-card" data-quest-card><p><strong>«Куда улетают осенью птицы__»</strong></p><div class="quest-answer-grid"><button class="quest-answer" data-correct="false">.</button><button class="quest-answer" data-correct="true">?</button><button class="quest-answer" data-correct="false">!</button><button class="quest-answer" data-correct="false">,</button></div><div class="quest-teams"><button class="quest-team" data-team="0">Ходят «Рябинки»</button><button class="quest-team" data-team="1">Ходят «Каштаны»</button></div><p class="quest-feedback" data-feedback role="status" aria-live="polite"></p><p class="quest-hint" hidden data-hint><strong>Подсказка Запятайки:</strong> вопросительное предложение произносится с вопросительной интонацией и заканчивается знаком вопроса.</p><button class="quest-next" hidden data-next>Вернуться к карте →</button></div></div>
+        </section>
+
+        <section data-task="3" class="task-slide">
+          <div class="quest-topline"><div><p class="slide-kicker">ЛОКАЦИЯ 03 · ДОМИК СОВЫ</p><h2>Сова Точка проверяет цель</h2></div><div class="quest-points"><span class="quest-score" data-score="0">Рябинки: 0</span><span class="quest-score quest-score--green" data-score="1">Каштаны: 0</span></div></div>
+          <div class="task-layout"><div class="character-bubble character-bubble--owl">🦉<strong>Сова Точка:</strong><span>Прислушайтесь: автор сообщает, спрашивает или просит?</span></div><div class="quest-card" data-quest-card><p><strong>Какое предложение спряталось в домике: «Соберите жёлуди в корзину!»?</strong></p><div class="quest-answer-grid"><button class="quest-answer" data-correct="false">повествовательное</button><button class="quest-answer" data-correct="true">побудительное</button><button class="quest-answer" data-correct="false">вопросительное</button><button class="quest-answer" data-correct="false">восклицательное по цели</button></div><div class="quest-teams"><button class="quest-team" data-team="0">Ходят «Рябинки»</button><button class="quest-team" data-team="1">Ходят «Каштаны»</button></div><p class="quest-feedback" data-feedback role="status" aria-live="polite"></p><p class="quest-hint" hidden data-hint><strong>Подсказка Совы:</strong> по цели высказывания предложение побудительное: оно побуждает выполнить действие. Восклицательный знак — это интонация.</p><button class="quest-next" hidden data-next>Вернуться к карте →</button></div></div>
+        </section>
+
+        <section data-task="4" class="task-slide">
+          <div class="quest-topline"><div><p class="slide-kicker">ЛОКАЦИЯ 04 · МОСТИК</p><h2>Соберите цепочку однородных слов</h2></div><div class="quest-points"><span class="quest-score" data-score="0">Рябинки: 0</span><span class="quest-score quest-score--green" data-score="1">Каштаны: 0</span></div></div>
+          <div class="task-layout"><div class="character-bubble character-bubble--fox">🦊<strong>Листик:</strong><span>На мостике слова идут рядом и отвечают на один вопрос. Найдите их!</span></div><div class="quest-card" data-quest-card><p><strong>В каком предложении есть однородные члены?</strong></p><div class="quest-answer-grid"><button class="quest-answer" data-correct="false">Тихий дождь начался.</button><button class="quest-answer" data-correct="true">Ветер качал, кружил и трепал листья.</button><button class="quest-answer" data-correct="false">Золотые листья лежали.</button><button class="quest-answer" data-correct="false">Дождь шёл вечером.</button></div><div class="quest-teams"><button class="quest-team" data-team="0">Ходят «Рябинки»</button><button class="quest-team" data-team="1">Ходят «Каштаны»</button></div><p class="quest-feedback" data-feedback role="status" aria-live="polite"></p><p class="quest-hint" hidden data-hint><strong>Подсказка Листика:</strong> слова «качал, кружил и трепал» отвечают на один вопрос «что делал?» и относятся к слову «ветер».</p><button class="quest-next" hidden data-next>Вернуться к карте →</button></div></div>
+        </section>
+
+        <section data-task="5" class="task-slide">
+          <div class="quest-topline"><div><p class="slide-kicker">ЛОКАЦИЯ 05 · СУНДУК ЗНАКОВ</p><h2>Верните лесу правильные знаки</h2></div><div class="quest-points"><span class="quest-score" data-score="0">Рябинки: 0</span><span class="quest-score quest-score--green" data-score="1">Каштаны: 0</span></div></div>
+          <div class="task-layout"><div class="character-bubble character-bubble--hedgehog">🦔<strong>Запятайка:</strong><span>Последняя загадка — соберите предложение и объясните каждый знак.</span></div><div class="quest-card" data-quest-card><p><strong>Как записать предложение: «Осенью листья желтеют и опадают»?</strong></p><div class="quest-answer-grid"><button class="quest-answer" data-correct="false">Осенью листья желтеют, и опадают.</button><button class="quest-answer" data-correct="true">Осенью листья желтеют и опадают.</button><button class="quest-answer" data-correct="false">Осенью, листья желтеют и опадают.</button><button class="quest-answer" data-correct="false">Осенью листья, желтеют и опадают.</button></div><div class="quest-teams"><button class="quest-team" data-team="0">Ходят «Рябинки»</button><button class="quest-team" data-team="1">Ходят «Каштаны»</button></div><p class="quest-feedback" data-feedback role="status" aria-live="polite"></p><p class="quest-hint" hidden data-hint><strong>Подсказка Запятайки:</strong> одиночный союз «и» соединяет однородные сказуемые «желтеют и опадают», поэтому запятая не нужна.</p><button class="quest-next" hidden data-next>К финалу →</button></div></div>
+        </section>
+
+        <section class="final-slide">
+          <div class="final-leaves" aria-hidden="true">🍁 🍂 🍃 🍁</div>
+          <span class="sticker sticker--yellow">МИССИЯ ВЫПОЛНЕНА</span>
+          <p class="slide-kicker">ФИНАЛ · ОСЕННИЙ ЛЕС СНОВА ЧИТАЕТСЯ</p>
+          <h2>Знаки вернулись на свои места!</h2>
+          <div class="final-card"><p data-final-result>Вы прошли все локации.</p><div class="quest-points final-points"><span class="quest-score" data-final-score="0">Рябинки: 0</span><span class="quest-score quest-score--green" data-final-score="1">Каштаны: 0</span></div><p class="quest-hint">Финальный круг: назовите три шага проверки предложения — от смысла к знаку.</p><button class="quest-next" data-restart>Начать заново ↺</button></div>
+        </section>
+      </div>
+    </div>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
