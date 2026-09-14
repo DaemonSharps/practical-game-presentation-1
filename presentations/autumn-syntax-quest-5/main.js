@@ -4,8 +4,6 @@ import './style.css';
 const taskCount = 5;
 const scores = [0, 0];
 const completed = new Set();
-let selectedTeam = null;
-let answered = false;
 
 function teamName(team) {
   return team === 0 ? 'Рябинки' : 'Каштаны';
@@ -46,8 +44,8 @@ function prepareTask(slide, deck) {
   const hint = card.querySelector('[data-hint]');
   const next = card.querySelector('[data-next]');
   const taskNumber = Number(slide.dataset.task);
-  selectedTeam = null;
-  answered = false;
+  let selectedTeam = null;
+  let answered = false;
 
   teams.forEach((button) => button.addEventListener('click', () => {
     if (answered) return;
