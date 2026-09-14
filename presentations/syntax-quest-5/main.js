@@ -10,9 +10,15 @@ function updateScores() {
   document.querySelectorAll('[data-score="1"]').forEach((item) => { item.textContent = `Юг: ${scores[1]}`; });
   document.querySelectorAll('[data-final-score="0"]').forEach((item) => { item.textContent = `Север: ${scores[0]}`; });
   document.querySelectorAll('[data-final-score="1"]').forEach((item) => { item.textContent = `Юг: ${scores[1]}`; });
+  const result = document.querySelector('[data-final-result]');
+  if (result) {
+    result.textContent = scores[0] === scores[1]
+      ? `Команды завершили экспедицию вничью: ${scores[0]} : ${scores[1]}.`
+      : `Побеждает команда ${scores[0] > scores[1] ? 'Севера' : 'Юга'}: ${Math.max(...scores)} : ${Math.min(...scores)}.`;
+  }
 }
 
-function prepareTask(slide) {
+function prepareTask(slide, deck) {
   const card = slide.querySelector('[data-quest-card]');
   if (!card) return;
   const answers = [...card.querySelectorAll('.quest-answer')];
@@ -55,10 +61,7 @@ function prepareTask(slide) {
   }));
 
   next.addEventListener('click', () => {
-    const nextSlide = Number(slide.dataset.task) < tasks ? `data-task=\"${Number(slide.dataset.task) + 1}\"` : '#quest-finish';
-    if (nextSlide.startsWith('#')) document.querySelector(nextSlide)?.scrollIntoView();
-    else document.querySelector(`[${nextSlide}]`)?.scrollIntoView();
-    document.querySelector('.reveal')?.dispatchEvent(new KeyboardEvent('keydown', { key: 'ArrowRight', bubbles: true }));
+    deck.next();
   });
 }
 
@@ -67,7 +70,7 @@ startPresentation({
     document.querySelectorAll('[data-task]').forEach((slide) => {
       const progress = slide.querySelector('[data-progress]');
       if (progress) progress.style.width = `${(Number(slide.dataset.task) / tasks) * 100}%`;
-      prepareTask(slide);
+      prepareTask(slide, deck);
     });
     document.querySelector('[data-restart]')?.addEventListener('click', () => window.location.reload());
     deck.on('slidechanged', updateScores);
