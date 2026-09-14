@@ -1,0 +1,19 @@
+{
+  "name": "practical-game-presentation-1",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Интерактивные учебные презентации на reveal.js для 5–10 классов",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "npm run build"
+  },
+  "dependencies": {
+    "reveal.js": "^5.1.0"
+  },
+  "devDependencies": {
+    "vite": "^6.0.0"
+  }
+}
